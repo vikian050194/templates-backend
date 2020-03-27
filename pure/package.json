@@ -1,0 +1,17 @@
+{
+  "name": "pure_node_app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "node-dev server/app.js"
+  },
+  "engines": {
+    "node": "^12.16.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "node-dev": "^4.0.0"
+  }
+}
