@@ -7,9 +7,12 @@ http.createServer(function (req, res) {
 
     const { query } = url.parse(req.url, true);
     const { id } = query;
+    const nextId = parseInt(id) + 1;
+
+    console.info(nextId);
 
     const result = {
-        next: parseInt(id) + 1
+        nextId
     };
 
     res.write(JSON.stringify(result));

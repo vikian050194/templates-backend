@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
-    "configurations": [{
+    "configurations": [
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
@@ -16,6 +17,13 @@
             "name": "Attach to Process",
             "port": 5858,
             "processId": "${command:PickProcess}"
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
         }
     ]
 }
