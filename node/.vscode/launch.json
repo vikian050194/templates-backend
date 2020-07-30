@@ -19,11 +19,16 @@
             "processId": "${command:PickProcess}"
         },
         {
-            "name": "Docker Node.js Launch",
-            "type": "docker",
+            "name": "Debug tests",
+            "type": "node",
             "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "platform": "node"
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "stopOnEntry": false,
+            "args": [
+                "${file}",
+                "--no-timeouts"
+            ],
+            "cwd": "${workspaceRoot}"
         }
     ]
 }
