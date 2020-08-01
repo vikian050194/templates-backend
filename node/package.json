@@ -19,5 +19,8 @@
     "mocha": "^7.2.0",
     "node-dev": "^4.0.0",
     "nyc": "^15.0.1"
+  },
+  "dependencies": {
+    "morgan": "^1.10.0"
   }
 }
