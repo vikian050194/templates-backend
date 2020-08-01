@@ -1,8 +1,8 @@
 const port = process.env.PORT || 8081;
 
 const express = require("express");
-// const morgan = require("morgan");
-const logger = require("./logger");
+const morgan = require("morgan");
+// const logger = require("./logger1");
 const bodyParser = require("body-parser");
 const app = express();
 
@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// const loggerOutputPredefinedFormat = "dev";
-// app.use(morgan(loggerOutputPredefinedFormat));
-app.use(logger);
+const loggerOutputPredefinedFormat = "dev";
+app.use(morgan(loggerOutputPredefinedFormat));
+// app.use(logger);
 
 // app.use("/", express.static("public"));
 
