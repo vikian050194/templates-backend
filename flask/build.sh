@@ -1,1 +1,1 @@
-docker image build --tag fapi .
+docker image build --tag flask-app .

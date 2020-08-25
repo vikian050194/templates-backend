@@ -8,5 +8,5 @@ ENV FLASK_ENV=development
 ENV PORT=8081
 EXPOSE ${PORT}
 CMD [ "flask", "run", "--host=0.0.0.0", "--port=8081" ]
-# ENTRYPOINT [ "npm", "start" ]
+# ENTRYPOINT [ "flask", "run", "--host=0.0.0.0", "--port=8081" ]
 # COPY . .

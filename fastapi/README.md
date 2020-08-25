@@ -1,4 +1,4 @@
-virtualenv -p python3.7.5 venv
+virtualenv -p python3 venv
 pip3 freeze > requirements.txt
 . venv/bin/activate
 pip3 install -r requirements.txt
