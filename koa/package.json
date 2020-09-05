@@ -1,0 +1,32 @@
+{
+  "name": "koa_node_api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node-dev src/app.js",
+    "test": "mocha ./tests/**/*-tests.js",
+    "cover": "nyc --reporter=html npm run test",
+    "docker": "docker run -it --rm -p 8081:8081 -v $(pwd):/var/www -w \"/var/www\" node:current-slim /bin/bash -c \"npm i && node src/app.js\""
+  },
+  "engines": {
+    "node": "^12.16.3"
+  },
+  "dependencies": {
+    "@koa/router": "^9.4.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-static": "^5.0.0",
+    "koa-static-cache": "^5.1.4"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "mocha": "^7.2.0",
+    "node-dev": "^4.0.0",
+    "nyc": "^15.0.1"
+  }
+}
