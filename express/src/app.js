@@ -3,11 +3,12 @@ const port = process.env.PORT || 8081;
 const express = require("express");
 const morgan = require("morgan");
 // const logger = require("./logger1");
-const bodyParser = require("body-parser");
+// const logger = require("./logger2");
+// const logger = require("./logger3");
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
+app.use(express.json());
+app.use(express.urlencoded({
     extended: true
 }));
 
