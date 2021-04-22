@@ -1,5 +1,5 @@
 {
-  "name": "koa_node_api",
+  "name": "polka_node_api",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,13 +13,7 @@
     "node": "^12.16.3"
   },
   "dependencies": {
-    "@koa/router": "^10.0.0",
-    "koa": "^2.13.1",
-    "koa-bodyparser": "^4.3.0",
-    "koa-logger": "^3.2.1",
-    "koa-mount": "^4.0.0",
-    "koa-static": "^5.0.0",
-    "koa-static-cache": "^5.1.4"
+    "polka": "^0.5.2"
   },
   "devDependencies": {
     "assert": "^2.0.0",
