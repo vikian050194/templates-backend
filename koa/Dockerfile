@@ -1,0 +1,1 @@
+# "docker": "docker run -it --rm -p 8081:8081 -v $(pwd):/var/www -w \"/var/www\" node:current-slim /bin/bash -c \"npm i && node src/app.js\""
