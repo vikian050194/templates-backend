@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "8081"
+            ],
+        },
+        {
+            "name": "Python: Web.py",
+            "type": "python",
+            "request": "launch",
+            "module": "web",
+            "args": [
+                "8081"
+            ],
+        }
+    ]
+}
